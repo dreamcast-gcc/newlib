@@ -3945,6 +3945,9 @@ case "${target}" in
   or1k*-*-*)
     noconfigdirs="$noconfigdirs gdb"
     ;;
+  sh*-dreamcast-*)
+    noconfigdirs="$noconfigdirs gprof target-libgloss"
+    ;;
   sh-*-*)
     case "${target}" in
       sh*-*-elf)

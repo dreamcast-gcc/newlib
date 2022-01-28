@@ -1511,6 +1511,8 @@ case $os in
 		;;
 	ios)
 		;;
+	dreamcast)
+		;;
 	none)
 		;;
 	*-eabi)
