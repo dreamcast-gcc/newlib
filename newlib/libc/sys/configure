@@ -11834,6 +11834,8 @@ subdirs="$subdirs a29khif"
  ;;
 	decstation) subdirs="$subdirs decstation"
  ;;
+	dreamcast) subdirs="$subdirs dreamcast"
+ ;;
 	epiphany) subdirs="$subdirs epiphany"
  ;;
 	h8300hms) subdirs="$subdirs h8300hms"

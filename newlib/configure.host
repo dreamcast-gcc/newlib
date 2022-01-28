@@ -593,6 +593,11 @@ case "${host}" in
   sh*-*)
 	sys_dir=sh
 	;;
+  sh*-dreamcast-*)
+	sys_dir=dreamcast
+	posix_dir=posix
+	newlib_cflags="${newlib_cflags} -DHAVE_NANOSLEEP -DHAVE_RENAME -DHAVE_FCNTL -D_NO_POSIX_SPAWN -D_NO_EXECVE -DNO_EXEC"
+	;;
   sparc-sun-sunos*)
 	sys_dir=sun4
 	unix_dir=unix
@@ -885,6 +890,10 @@ newlib_cflags="${newlib_cflags} -DCLOCK_PROVIDED -DMALLOC_PROVIDED -DEXIT_PROVID
 	syscall_dir=syscalls
 	;;
   sh*-*-*)
+	default_newlib_io_long_long="yes"
+	syscall_dir=syscalls
+	;;
+  sh*-dreamcast-elf*)
 	default_newlib_io_long_long="yes"
 	syscall_dir=syscalls
 	;;
