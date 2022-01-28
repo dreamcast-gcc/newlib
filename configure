@@ -3723,7 +3723,7 @@ case "${target}" in
   *-*-kaos*)
     # Remove unsupported stuff on all kaOS configurations.
     noconfigdirs="$noconfigdirs target-libgloss"
-    ;;sh*sh*
+    ;;
   *-*-netbsd*)
     ;;
   *-*-netware*)
