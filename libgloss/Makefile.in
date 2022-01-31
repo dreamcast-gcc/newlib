@@ -123,6 +123,8 @@ install: force
 	srcrootpre=`cd $(srcdir); pwd`/; export srcrootpre; \
 	$(MULTIDO) $(FLAGS_TO_PASS) multi-do DO=install
 
+install-strip: install
+
 test: force
 	@rootpre=`pwd`/; export rootpre; \
 	srcrootpre=`cd $(srcdir); pwd`/; export srcrootpre; \
