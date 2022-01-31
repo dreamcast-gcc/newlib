@@ -32,12 +32,11 @@ __stack_chk_init (void)
 #endif
 
 void
-__attribute__((__noreturn__))
+__attribute__((__noreturn__, weak))
 __stack_chk_fail (void)
 {
   char msg[] = "*** stack smashing detected ***: terminated\n";
   write (2, msg, strlen (msg));
-  raise (SIGABRT);
   _exit (127);
 }
 

@@ -69,7 +69,7 @@ typedef __uint32_t __id_t;
 
 #ifndef __machine_ino_t_defined
 #if (defined(__i386__) && (defined(GO32) || defined(__MSDOS__))) || \
-    defined(__sparc__) || defined(__SPU__)
+    defined(__sparc__) || defined(__SPU__) || defined(__sh__)
 typedef unsigned long __ino_t;
 #else
 typedef unsigned short __ino_t;
